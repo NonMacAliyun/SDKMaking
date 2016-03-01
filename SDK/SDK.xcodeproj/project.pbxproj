@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		F81828081C85B0E00023E4A2 /* SDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F81828071C85B0E00023E4A2 /* SDK.h */; };
-		F818280A1C85B0E00023E4A2 /* SDK.m in Sources */ = {isa = PBXBuildFile; fileRef = F81828091C85B0E00023E4A2 /* SDK.m */; };
+		F81828111C85B1230023E4A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81828101C85B1230023E4A2 /* UIKit.framework */; };
+		F81828131C85B1590023E4A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81828121C85B1590023E4A2 /* Foundation.framework */; };
+		F81828151C85B16C0023E4A2 /* SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = F81828071C85B0E00023E4A2 /* SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F818281A1C85B19E0023E4A2 /* HomeVC.h in Headers */ = {isa = PBXBuildFile; fileRef = F81828171C85B19E0023E4A2 /* HomeVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F818281B1C85B19E0023E4A2 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F81828181C85B19E0023E4A2 /* HomeVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +31,11 @@
 /* Begin PBXFileReference section */
 		F81828041C85B0E00023E4A2 /* libSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F81828071C85B0E00023E4A2 /* SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDK.h; sourceTree = "<group>"; };
-		F81828091C85B0E00023E4A2 /* SDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDK.m; sourceTree = "<group>"; };
+		F81828101C85B1230023E4A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F81828121C85B1590023E4A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F81828171C85B19E0023E4A2 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeVC.h; path = Files/HomeVC.h; sourceTree = "<group>"; };
+		F81828181C85B19E0023E4A2 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeVC.m; path = Files/HomeVC.m; sourceTree = "<group>"; };
+		F81828191C85B19E0023E4A2 /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeVC.xib; path = Files/HomeVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F81828131C85B1590023E4A2 /* Foundation.framework in Frameworks */,
+				F81828111C85B1230023E4A2 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +54,8 @@
 		F81827FB1C85B0E00023E4A2 = {
 			isa = PBXGroup;
 			children = (
+				F81828121C85B1590023E4A2 /* Foundation.framework */,
+				F81828101C85B1230023E4A2 /* UIKit.framework */,
 				F81828061C85B0E00023E4A2 /* SDK */,
 				F81828051C85B0E00023E4A2 /* Products */,
 			);
@@ -60,13 +72,35 @@
 		F81828061C85B0E00023E4A2 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
+				F81828161C85B17F0023E4A2 /* Views */,
 				F81828071C85B0E00023E4A2 /* SDK.h */,
-				F81828091C85B0E00023E4A2 /* SDK.m */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
 		};
+		F81828161C85B17F0023E4A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F81828171C85B19E0023E4A2 /* HomeVC.h */,
+				F81828181C85B19E0023E4A2 /* HomeVC.m */,
+				F81828191C85B19E0023E4A2 /* HomeVC.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F81828141C85B1690023E4A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F818281A1C85B19E0023E4A2 /* HomeVC.h in Headers */,
+				F81828151C85B16C0023E4A2 /* SDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		F81828031C85B0E00023E4A2 /* SDK */ = {
@@ -76,6 +110,7 @@
 				F81828001C85B0E00023E4A2 /* Sources */,
 				F81828011C85B0E00023E4A2 /* Frameworks */,
 				F81828021C85B0E00023E4A2 /* CopyFiles */,
+				F81828141C85B1690023E4A2 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -122,7 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F818280A1C85B0E00023E4A2 /* SDK.m in Sources */,
+				F818281B1C85B19E0023E4A2 /* HomeVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +249,7 @@
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -223,6 +259,7 @@
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -246,6 +283,7 @@
 				F818280F1C85B0E00023E4A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

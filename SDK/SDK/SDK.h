@@ -6,8 +6,5 @@
 //  Copyright © 2016年 Non. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-@interface SDK : NSObject
-
-@end
+#import <UIKit/UIKit.h>
+#import <SDK/sdk.h>

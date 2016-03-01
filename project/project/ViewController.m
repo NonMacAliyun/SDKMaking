@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <SDK/homeVC.h>
 
 @interface ViewController ()
 
@@ -16,12 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self performSelector:@selector(showToNext) withObject:nil afterDelay:3];
+}
+
+- (void)showToNext {
+    [HomeVC showHomeVCFrom:self.navigationController];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

@@ -10,4 +10,6 @@
 
 @interface HomeVC : UIViewController
 
++ (void)showHomeVCFrom:(UINavigationController *)naviVC;
+
 @end
